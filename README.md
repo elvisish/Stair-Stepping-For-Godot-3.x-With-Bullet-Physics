@@ -2,9 +2,7 @@
 A backport of Andicraft's StairsCharacter (https://github.com/Andicraft/stairs-character) for 3.x using Bullet Physics
 
 ## Stairs Character
-A simple to use class that enables your CharacterBody3D to handle stairs properly.
-
-Mainly tested with the Jolt physics engine and cylinder colliders, not guaranteed to work well with anything else - but try it!
+A simple to use class that enables your KinematicBody using Bullet to handle stairs properly. Steps-up on ramps too.
 
 ### Usage instructions:
 * Extend your player script from StairsCharacter
