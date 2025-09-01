@@ -1,4 +1,4 @@
-# Stair-Stepping-For-Godot-3.x-With-Bullet-Physics
+# Stair Stepping For Godot 3.x With Bullet Physics
 A backport of Andicraft's StairsCharacter (https://github.com/Andicraft/stairs-character) for 3.x using Bullet Physics
 
 ## Stairs Character
