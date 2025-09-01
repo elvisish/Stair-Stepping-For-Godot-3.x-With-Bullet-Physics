@@ -119,6 +119,11 @@ func stair_step_up() -> void:
 	PhysicsServer.body_test_motion(get_rid(), motion_transform, remainder, false, result, true, [])
 	motion_transform = motion_transform.translated(result.get_motion())
 	
+	# Hack to improve step-slide-creep, step size might need to be decreased, comment these 3 lines out if any issues
+	if result.get_motion().length() < 0.05: #0.1:
+		motion_transform.origin.x += distance.x #* 2.0
+		motion_transform.origin.z += distance.z #* 2.0
+		
 	# And set the collider back down again
 #	parameters.from = motion_transform;
 	# But no further than how far we stepped up
